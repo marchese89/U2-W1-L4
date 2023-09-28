@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+
+body,
+html {
+  height: 100%;
+  background-color: #666666;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caveat", cursive;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  overflow: hidden;
+}
+
+.postit {
+  width: 15vw;
+  height: 15vw;
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 9px 4px #2f2f2f;
+  transition: all 1s linear; /*cubic-bezier(1, 0.23, 0.93, 0.51);*/
+}
+
+.inner {
+  height: 50%;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.8em;
+}
+
+.postit:nth-of-type(1) {
+  background-color: #f8f9c6;
+  transform: rotate(-7deg);
+  animation: movePostit1 2s ease-out 0s 1;
+}
+
+.postit:nth-of-type(5) {
+  background-color: #f8f9c6;
+  transform: rotate(-4deg);
+  animation: movePostit7 2s ease-out 0s 1;
+}
+
+.postit:nth-of-type(7) {
+  background-color: #f8f9c6;
+  transform: rotate(-5deg);
+  animation: movePostit7 2s ease-out 0.5s 1;
+}
+
+.postit:nth-of-type(2) {
+  background-color: #c8f8ca;
+  transform: rotate(7deg);
+  animation: movePostit2 2s ease-out 0.5s 1;
+}
+.postit:nth-of-type(4) {
+  background-color: #c8f8ca;
+  transform: rotate(17deg);
+  animation: movePostit4 2s ease-out 0s 1;
+}
+.postit:nth-of-type(8) {
+  background-color: #c8f8ca;
+  transform: rotate(6deg);
+  animation: movePostit8 2s ease-out 0.5s 1;
+}
+
+.postit:nth-of-type(3) {
+  background-color: #c5c5f0;
+  transform: rotate(-10deg);
+  animation: movePostit3 2s ease-out 0s 1;
+}
+.postit:nth-of-type(6) {
+  background-color: #c5c5f0;
+  transform: rotate(-8deg);
+  animation: movePostit6 2s ease-out 0.5s 1;
+}
+
+.postit:hover {
+  transform: rotate(0deg) scale(1.2);
+  z-index: 3;
+  cursor: pointer;
+  box-shadow: 7px 9px 12px 8px #2f2f2f;
+}
+
+/* animazione dei postit all'avvio della pagina */
+
+@keyframes movePostit1 {
+  0% {
+    transform: translateY(-100vh) translateX(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes movePostit2 {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes movePostit3 {
+  0% {
+    transform: translateY(-100vh) translateX(60vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes movePostit4 {
+  0% {
+    transform: translateY(-100vh) translateX(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes movePostit5 {
+  0% {
+    transform: translateY(-100vh) translateX(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes movePostit6 {
+  0% {
+    transform: translateY(100vh) translateX(30vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes movePostit7 {
+  0% {
+    transform: translateY(100vh) translateX(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes movePostit8 {
+  0% {
+    transform: translateY(100vh) translateX(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
