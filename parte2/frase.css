@@ -56,12 +56,12 @@ i:nth-of-type(1) {
 
 i:nth-of-type(2) {
   transform: translateY(-10em);
-  animation: iAnimation 3s linear 4s 1, iAnimation 3s linear 11s infinite;
+  animation: iAnimation 3s linear 4s 1, iAnimation 3s linear 10s infinite;
 }
 
 i:nth-of-type(3) {
   transform: translateY(-10em); /* -0.4em*/
-  animation: iAnimation 3s linear 8s 1, iAnimation 3s linear 13s infinite;
+  animation: iAnimation 3s linear 8s 1, iAnimation 3s linear 11s infinite;
 }
 
 @keyframes iAnimation {
